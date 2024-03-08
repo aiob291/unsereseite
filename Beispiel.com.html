@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <style>
+    #slideshow { 
+  position: relative; 
+  height: 400px; 
+} 
+ 
+.slide { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+} 
+ 
+.slide.active { 
+  opacity: 1; 
+} 
+
+
+
+    </style>
+        <style>
+        #slideshow { 
+  position: relative; 
+  height: 400px; 
+} 
+ 
+.slide { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+} 
+ 
+.slide.active { 
+  opacity: 1; 
+} 
+
+
+
+    </style>
+    <script>
+    var slides = document.querySelectorAll('.slide'); 
+var currentSlide = 0; 
+var slideInterval = setInterval(nextSlide, 5000); 
+ 
+function nextSlide() { 
+  slides[currentSlide].className = 'slide'; 
+  currentSlide = (currentSlide + 1) % slides.length; 
+  slides[currentSlide].className = 'slide active'; 
+} 
+    
+    </script>
+</head>
+<body>
+    <div id="slideshow">
+<div class="slide">Slide 1</div>
+<div class="slide">Slide 2</div>
+<div class="slide">Slide 3</div>
+</div>
+</body>
+</html>
