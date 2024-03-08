@@ -1,0 +1,41 @@
+#stundenplan{
+    padding: 100px 0;
+    background-color: rgb(55, 34, 117);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 100px;
+    flex-wrap: wrap-reverse;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.stundenplan_container{
+    width: 750px;
+    max-width: 90%;
+
+}
+#Stundenplan img{
+    width: 550px;
+    max-width: calc(90% - 30px);
+    
+}
+.stundenplan_container h2{
+    font-size: 70px;
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom, #f3f1f7, #c0b7db);
+    background-clip: text;
+    color: transparent;
+}
+.stundenplan_container p{
+    text-align: justify;
+    line-height: 170%;
+    font-size: 18px;
+}
+@media(max-width: 900px){
+    #stundenplan{
+        padding: 50px 0;
+    }
+    #stundenplan h2{
+        text-align: center;
+        font-size: 12vw;
+    }
+}
