@@ -26,8 +26,7 @@ h3{
 h1{
     font-size: 80px;
     line-height: 80%;
-    background: linear-gradient(to bottom, #DAD1F4, #8F75DD);
-    background-clip: text;
+
     color: white;
     
 }
